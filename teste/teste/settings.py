@@ -46,7 +46,7 @@ INSTALLED_APPS = [
     "crispy_forms",
     #
     "pages.apps.PagesConfig",
-    "users.apps.UsersConfig",
+
 ]
 
 MIDDLEWARE = [
@@ -140,7 +140,7 @@ ACCOUNT_SIGNUP_PASSWORD_ENTER_TWICE = False
 ACCOUNT_USERNAME_REQUIRED = True
 ACCOUNT_EMAIL_REQUIRED = False
 ACCOUNT_DATE_FIELD_REQUIRED = True
-AUTH_USER_MODEL = "users.User"
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
