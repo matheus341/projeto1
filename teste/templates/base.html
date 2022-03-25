@@ -12,9 +12,13 @@
             <div class="container">
                 <a class="navbar-brand" href="{% url 'pages:home' %}">lista de usuarios</a>
                 <ul class="navbar-nav">
+
                     {% if user.is_authenticated %}
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'account_logout' %}">Sair</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'account_logout' %}">baixar dados</a>
                     </li>
                     {% else %}
                     <li class="nav-item">

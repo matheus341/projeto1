@@ -3,5 +3,12 @@
 {% block title %}lista de cadastrados{% endblock %}
 
 {% block content %}
-   ola marilene
+{% if user.is_authenticated %}
+
+{% else %}
+      <div class="conteiner" align="center">
+         <h1>entre ou cadastre-se para acessar a base de dados</h1>
+
+      </div>
+{% endif %}
 {% endblock %}
