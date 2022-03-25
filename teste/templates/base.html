@@ -20,6 +20,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'account_logout' %}">baixar dados</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'pages:listar' %}">cadastrados</a>
+                    </li>
                     {% else %}
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'account_login' %}">Entrar</a>
